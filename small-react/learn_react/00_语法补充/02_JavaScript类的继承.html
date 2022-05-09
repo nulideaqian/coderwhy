@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  class Person {
+    constructor(name, age) {
+      this.name = name
+      this.age = age
+    }
+
+    running() {
+      console.log("running")
+    }
+  }
+  class Student extends Person {
+    constructor(name, age, sno) {
+      super(name, age)
+      this.sno = sno
+    }
+  }
+  class Teacher extends Person {
+    constructor(name, age, title) {
+      super(name, age)
+      this.title = title
+    }
+  }
+  new Teacher("bob", 30, "expert").running()
+</script>
+</body>
+</html>

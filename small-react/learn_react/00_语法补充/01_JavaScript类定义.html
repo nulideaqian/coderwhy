@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  // es5 define class
+  // function Person(name, age) {
+  //   this.name = name
+  //   this.age = age
+  // }
+  //
+  // Person.prototype.running = function() {
+  //   console.log(this.name, this.age, "running")
+  // }
+  //
+  // var p = new Person("Bob", 30)
+  // console.log(p.name, p.age)
+  // p.running()
+
+  // es6 define class
+  class Person {
+    constructor(name, age) {
+      this.name = name
+      this.age = age
+    }
+
+    running() {
+      console.log(this.name, this.age, "running")
+    }
+  }
+  const p = new Person("Alex", 30)
+  console.log(p.name, p.age)
+  p.running()
+
+  let func = p.running
+  // func()
+  // var obj = {
+  //   name: "kobe",
+  //   age: 40
+  // }
+  func.call({name: "kobe", age: 40})
+
+  func = func.bind({name: "kobe", age: 40})
+  func()
+</script>
+</body>
+</html>
