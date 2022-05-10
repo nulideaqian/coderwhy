@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script crossorigin src="../react/react.development.js"></script>
+<script crossorigin src="../react/react-dom.development.js"></script>
+<script src="../react/babel.min.js"></script>
+
+<div id="app"></div>
+
+<script type="text/babel">
+  class App extends React.Component {
+    constructor(props) {
+      super(props)
+      this.state = {
+        count: 0
+      }
+    }
+
+    plusOne() {
+      this.setState({
+        count: this.state.count + 1
+      })
+    }
+
+    decrementOne() {
+      this.setState({
+        count: this.state.count - 1
+      })
+    }
+
+    render() {
+      return (
+        <div>
+          <h2>当前记数{this.state.count}</h2>
+          <button onClick={this.plusOne.bind(this)}>+1</button>
+          <button onClick={this.decrementOne.bind(this)}>-1</button>
+        </div>
+      )
+    }
+  }
+
+  ReactDOM.render(<App/>, document.getElementById("app"))
+</script>
+</body>
+</html>
