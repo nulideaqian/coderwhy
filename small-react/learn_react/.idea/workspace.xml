@@ -51,11 +51,8 @@
       <recent name="E:\code\github\coderwhy\small-react\learn_react\01_Hello-React" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.02_案例练习-计数器.html">
+  <component name="RunManager" selected="JavaScript Debug.04_jsx中的注释.html">
     <configuration name="01_案例练习-电影列表.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/02_JSX核心语法一/01_案例练习-电影列表.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="01_JavaScript类定义.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/00_语法补充/01_JavaScript类定义.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="02_案例练习-计数器.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/02_JSX核心语法一/02_案例练习-计数器.html" useBuiltInWebServerPort="true">
@@ -64,16 +61,19 @@
     <configuration name="02_JavaScript类的继承.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/00_语法补充/02_JavaScript类的继承.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="04_Hello_World-组件化实现.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/01_Hello-React/04_Hello_World-组件化实现.html" useBuiltInWebServerPort="true">
+    <configuration name="03_认识jsx的语法.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/02_JSX核心语法一/03_认识jsx的语法.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="04_jsx中的注释.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/02_JSX核心语法一/04_jsx中的注释.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.04_jsx中的注释.html" />
+        <item itemvalue="JavaScript Debug.03_认识jsx的语法.html" />
         <item itemvalue="JavaScript Debug.02_案例练习-计数器.html" />
         <item itemvalue="JavaScript Debug.01_案例练习-电影列表.html" />
         <item itemvalue="JavaScript Debug.02_JavaScript类的继承.html" />
-        <item itemvalue="JavaScript Debug.01_JavaScript类定义.html" />
-        <item itemvalue="JavaScript Debug.04_Hello_World-组件化实现.html" />
       </list>
     </recent_temporary>
   </component>
@@ -88,7 +88,8 @@
       <workItem from="1651999608420" duration="42000" />
       <workItem from="1651999661562" duration="4989000" />
       <workItem from="1652110436804" duration="5249000" />
-      <workItem from="1652206300058" duration="3062000" />
+      <workItem from="1652206300058" duration="3310000" />
+      <workItem from="1652282233175" duration="2858000" />
     </task>
     <servers />
   </component>
