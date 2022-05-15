@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c86fc3c-185d-47f2-b947-58b2ce1f3ac2" name="变更" comment="变更" />
+    <list default="true" id="6c86fc3c-185d-47f2-b947-58b2ce1f3ac2" name="变更" comment="变更">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,47 +33,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/code/github/coderwhy/small-react/learn_react/01_Hello-React&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "E:/code/github/coderwhy/small-react/learn_react/03_JSX核心语法二",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\github\coderwhy\small-react\learn_react\03_JSX核心语法二" />
+      <recent name="E:\code\github\coderwhy\small-react\learn_react\02_JSX核心语法一" />
       <recent name="E:\code\github\coderwhy\small-react\learn_react\01_Hello-React" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.04_jsx中的注释.html">
-    <configuration name="01_案例练习-电影列表.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/02_JSX核心语法一/01_案例练习-电影列表.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.05_条件渲染-v-show效果.html">
+    <configuration name="01_jsx绑定属性.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/03_JSX核心语法二/01_jsx绑定属性.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="02_案例练习-计数器.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/02_JSX核心语法一/02_案例练习-计数器.html" useBuiltInWebServerPort="true">
+    <configuration name="02_jsx绑定事件.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/03_JSX核心语法二/02_jsx绑定事件.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="02_JavaScript类的继承.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/00_语法补充/02_JavaScript类的继承.html" useBuiltInWebServerPort="true">
+    <configuration name="03_jsx绑定事件-传递参数.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/03_JSX核心语法二/03_jsx绑定事件-传递参数.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="03_认识jsx的语法.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/02_JSX核心语法一/03_认识jsx的语法.html" useBuiltInWebServerPort="true">
+    <configuration name="04_条件渲染.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/03_JSX核心语法二/04_条件渲染.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="04_jsx中的注释.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/02_JSX核心语法一/04_jsx中的注释.html" useBuiltInWebServerPort="true">
+    <configuration name="05_条件渲染-v-show效果.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/03_JSX核心语法二/05_条件渲染-v-show效果.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.04_jsx中的注释.html" />
-        <item itemvalue="JavaScript Debug.03_认识jsx的语法.html" />
-        <item itemvalue="JavaScript Debug.02_案例练习-计数器.html" />
-        <item itemvalue="JavaScript Debug.01_案例练习-电影列表.html" />
-        <item itemvalue="JavaScript Debug.02_JavaScript类的继承.html" />
+        <item itemvalue="JavaScript Debug.05_条件渲染-v-show效果.html" />
+        <item itemvalue="JavaScript Debug.04_条件渲染.html" />
+        <item itemvalue="JavaScript Debug.03_jsx绑定事件-传递参数.html" />
+        <item itemvalue="JavaScript Debug.02_jsx绑定事件.html" />
+        <item itemvalue="JavaScript Debug.01_jsx绑定属性.html" />
       </list>
     </recent_temporary>
   </component>
@@ -88,6 +92,7 @@
       <workItem from="1652110436804" duration="5249000" />
       <workItem from="1652206300058" duration="3310000" />
       <workItem from="1652282233175" duration="3060000" />
+      <workItem from="1652609218023" duration="13502000" />
     </task>
     <servers />
   </component>

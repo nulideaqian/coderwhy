@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script crossorigin src="../react/react.development.js"></script>
+<script crossorigin src="../react/react-dom.development.js"></script>
+<script src="../react/babel.min.js"></script>
+
+<div id="app"></div>
+
+<script type="text/babel">
+  class App extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        // 1. 在{}可以正常显示的内容：String，Number，Array
+        name: "why",
+        age: 18,
+        names: ["abc", "cba", "nba"],
+        // 2. 在{}不能显示
+        test1: null,
+        test2: undefined,
+        test3: true,
+        flag: true,
+
+        // 3. 对象不能作为jsx的子类
+        info: {
+          name: "kobe",
+          age: 40,
+        }
+      }
+    }
+
+    render() {
+      return (
+        <div>
+          <h2>{this.state.name}</h2>
+          <h2>{this.state.age}</h2>
+          <h2>{this.state.names}</h2>
+
+          <h2>{this.state.test1 + ""}</h2>
+          <h2>{this.state.test2 + ""}</h2>
+          <h2>{this.state.test3.toString()}</h2>
+
+          <h2>{this.state.flag ? '你好啊': null}</h2>
+          <h2>{this.state.flag && "你好啊"}</h2>
+
+          <h2>{this.state.info.age}</h2>
+        </div>
+      )
+    }
+  }
+
+  ReactDOM.render(<App/>, document.getElementById("app"))
+</script>
+</body>
+</html>
