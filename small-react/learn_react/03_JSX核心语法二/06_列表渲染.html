@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script crossorigin src="../react/react.development.js"></script>
+<script crossorigin src="../react/react-dom.development.js"></script>
+<script src="../react/babel.min.js"></script>
+
+<div id="app"></div>
+
+<script type="text/babel">
+  class App extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        names: ["abc", "cba", "mba", "dna"],
+        numbers: [110, 123, 50, 55, 333]
+      }
+    }
+
+    render() {
+      return (
+        <div>
+          <h2>名字列表</h2>
+          <ul>
+            {
+              this.state.names.map(name => <li>{name}</li>)
+            }
+          </ul>
+          <h2>数字列表</h2>
+          <ul>
+            {
+              this.state.numbers
+                .filter(num => num > 50)
+                .map(num => <li>{num}</li>)
+            }
+          </ul>
+          <ul>
+            {
+              this.state.numbers
+              .slice(1, 4)
+              .map(num => <li>{num}</li>)
+            }
+          </ul>
+        </div>
+      )
+    }
+  }
+
+  ReactDOM.render(<App/>, document.getElementById("app"))
+</script>
+</body>
+</html>

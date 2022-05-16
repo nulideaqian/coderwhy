@@ -33,31 +33,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "E:/code/github/coderwhy/small-react/learn_react/03_JSX核心语法二",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/code/github/coderwhy/small-react/learn_react/04_JSX的本质&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\github\coderwhy\small-react\learn_react\04_JSX的本质" />
       <recent name="E:\code\github\coderwhy\small-react\learn_react\03_JSX核心语法二" />
       <recent name="E:\code\github\coderwhy\small-react\learn_react\02_JSX核心语法一" />
       <recent name="E:\code\github\coderwhy\small-react\learn_react\01_Hello-React" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.05_条件渲染-v-show效果.html">
-    <configuration name="01_jsx绑定属性.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/03_JSX核心语法二/01_jsx绑定属性.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="02_jsx绑定事件.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/03_JSX核心语法二/02_jsx绑定事件.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.01_jsx的基本写法.html">
+    <configuration name="01_jsx的基本写法.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/04_JSX的本质/01_jsx的基本写法.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="03_jsx绑定事件-传递参数.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/03_JSX核心语法二/03_jsx绑定事件-传递参数.html" useBuiltInWebServerPort="true">
@@ -69,13 +67,16 @@
     <configuration name="05_条件渲染-v-show效果.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/03_JSX核心语法二/05_条件渲染-v-show效果.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="06_列表渲染.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/03_JSX核心语法二/06_列表渲染.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.01_jsx的基本写法.html" />
+        <item itemvalue="JavaScript Debug.06_列表渲染.html" />
         <item itemvalue="JavaScript Debug.05_条件渲染-v-show效果.html" />
         <item itemvalue="JavaScript Debug.04_条件渲染.html" />
         <item itemvalue="JavaScript Debug.03_jsx绑定事件-传递参数.html" />
-        <item itemvalue="JavaScript Debug.02_jsx绑定事件.html" />
-        <item itemvalue="JavaScript Debug.01_jsx绑定属性.html" />
       </list>
     </recent_temporary>
   </component>
@@ -92,7 +93,10 @@
       <workItem from="1652110436804" duration="5249000" />
       <workItem from="1652206300058" duration="3310000" />
       <workItem from="1652282233175" duration="3060000" />
-      <workItem from="1652609218023" duration="13502000" />
+      <workItem from="1652609218023" duration="13789000" />
+      <workItem from="1652715426675" duration="4630000" />
+      <workItem from="1652721720280" duration="449000" />
+      <workItem from="1652723198700" duration="143000" />
     </task>
     <servers />
   </component>
