@@ -54,14 +54,14 @@
       <recent name="E:\code\github\coderwhy\small-react\learn_react\01_Hello-React" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.01_jsx的基本写法.html">
+  <component name="RunManager" selected="JavaScript Debug.04_ReactElement对象.html">
     <configuration name="01_jsx的基本写法.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/04_JSX的本质/01_jsx的基本写法.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="03_jsx绑定事件-传递参数.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/03_JSX核心语法二/03_jsx绑定事件-传递参数.html" useBuiltInWebServerPort="true">
+    <configuration name="03_createElement写法.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/04_JSX的本质/03_createElement写法.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="04_条件渲染.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/03_JSX核心语法二/04_条件渲染.html" useBuiltInWebServerPort="true">
+    <configuration name="04_ReactElement对象.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/04_JSX的本质/04_ReactElement对象.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="05_条件渲染-v-show效果.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn_react/03_JSX核心语法二/05_条件渲染-v-show效果.html" useBuiltInWebServerPort="true">
@@ -72,11 +72,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.04_ReactElement对象.html" />
+        <item itemvalue="JavaScript Debug.03_createElement写法.html" />
         <item itemvalue="JavaScript Debug.01_jsx的基本写法.html" />
         <item itemvalue="JavaScript Debug.06_列表渲染.html" />
         <item itemvalue="JavaScript Debug.05_条件渲染-v-show效果.html" />
-        <item itemvalue="JavaScript Debug.04_条件渲染.html" />
-        <item itemvalue="JavaScript Debug.03_jsx绑定事件-传递参数.html" />
       </list>
     </recent_temporary>
   </component>
@@ -96,7 +96,8 @@
       <workItem from="1652609218023" duration="13789000" />
       <workItem from="1652715426675" duration="4630000" />
       <workItem from="1652721720280" duration="449000" />
-      <workItem from="1652723198700" duration="143000" />
+      <workItem from="1652723198700" duration="437000" />
+      <workItem from="1652884423976" duration="2579000" />
     </task>
     <servers />
   </component>
