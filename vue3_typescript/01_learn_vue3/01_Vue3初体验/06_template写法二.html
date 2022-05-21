@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  哈哈
+</div>
+
+<!--<script type="x-template" id="my-app">-->
+<!--  <div>-->
+<!--    <h2>{{message}}</h2>-->
+<!--    <h2>{{counter}}</h2>-->
+<!--    <button @click="increment">+1</button>-->
+<!--    <button v-on:click="decrement">-1</button>-->
+<!--  </div>-->
+<!--</script>-->
+<template id="my-app">
+  <div>
+    <h2>{{message}}</h2>
+    <h2>{{counter}}</h2>
+    <button @click="increment">+1</button>
+    <button v-on:click="decrement">-1</button>
+
+    <hr>
+    <button @click="btnClick">submit</button>
+  </div>
+</template>
+<script src="../js/vue.global.js"></script>
+<script>
+  Vue.createApp({
+    data: function() {
+      return {
+        message: 'Hello World',
+        counter: 1000
+      }
+    },
+    template: '#my-app',
+    methods: {
+      increment() {
+        this.counter++
+      },
+      decrement() {
+        this.counter--
+      },
+      btnClick: () => {
+        console.log(this)
+      }
+    }
+  }).mount('#app')
+
+  const foo = () => {
+    console.log(this)
+  }
+
+  const foo1 = function() {
+    console.log(this);
+  }
+
+  foo()
+  foo1()
+
+  const obj = {name: 'goahead'}
+
+  foo.apply(obj)
+  foo1.apply(obj)
+</script>
+</body>
+</html>

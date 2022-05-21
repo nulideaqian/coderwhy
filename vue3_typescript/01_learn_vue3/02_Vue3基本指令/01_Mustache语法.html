@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+
+<template id="my-app">
+  <h2>{{message}} - {{message}}</h2>
+  <h2>{{counter * 10}}</h2>
+  <h2>{{message.split(" ").reverse().join(" ")}}</h2>
+
+  <h2>{{getReverseMessage()}}</h2>
+
+  <h2>{{isShow ? '哈哈哈' : ''}}</h2>
+  <button @click="toggle">submit</button>
+
+<!--  <h2>{{ var name = 'abc'}}</h2>-->
+</template>
+<script src="../js/vue.global.js"></script>
+<script>
+  const App = {
+    template: '#my-app',
+    data() {
+      return {
+        message: 'Hello World',
+        counter: 100,
+        isShow: true
+      }
+    },
+    methods: {
+      getReverseMessage() {
+        return this.message.split(" ").reverse().join(" ")
+      },
+      toggle() {
+        this.isShow = !this.isShow
+      }
+    }
+  }
+
+  Vue.createApp(App).mount('#app')
+</script>
+</body>
+</html>

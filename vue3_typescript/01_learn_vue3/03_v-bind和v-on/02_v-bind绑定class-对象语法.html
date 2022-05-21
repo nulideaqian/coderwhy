@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .active {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<div id="app"></div>
+
+<template id="my-app">
+  <h2>{{message}}</h2>
+  <div :class="{'active': isActive, 'title': true}">hi hi hi</div>
+  <div :class="{'active': isActive, title: true}">hi hi hi</div>
+  <button @click="toggle">toggle</button>
+
+  <div class="abc cba" :class="classObj">hi hi hi</div>
+  <div class="abc cba" :class="getClassObj()">hi hi hi</div>
+</template>
+<script src="../js/vue.global.js"></script>
+<script>
+  const App = {
+    template: '#my-app',
+    data() {
+      return {
+        message: 'Hello World',
+        isActive: true,
+        title: 'abc',
+        classObj: {active: true, title: true}
+      }
+    },
+    methods: {
+      toggle() {
+        this.isActive = !this.isActive
+      },
+      getClassObj() {
+        return {active: true, title: true}
+      }
+    }
+  }
+
+  Vue.createApp(App).mount('#app')
+</script>
+</body>
+</html>

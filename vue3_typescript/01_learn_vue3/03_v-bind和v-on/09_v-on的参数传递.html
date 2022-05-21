@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+
+<template id="my-app">
+  <h2>{{message}}</h2>
+  <button @click="btnClick">按钮</button>
+  <button @click="btn2Click($event, 'coderwhy', 30)">按钮2</button>
+</template>
+<script src="../js/vue.global.js"></script>
+<script>
+  const App = {
+    template: '#my-app',
+    data() {
+      return {
+        message: 'Hello World'
+      }
+    },
+    methods: {
+      btnClick(event) {
+        console.log(event)
+      },
+      btn2Click(event, name, age) {
+        console.log(event)
+        console.log(name, age)
+      }
+    }
+  }
+
+  Vue.createApp(App).mount('#app')
+</script>
+</body>
+</html>
