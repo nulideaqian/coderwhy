@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+
+<template id="my-app">
+  <h2 v-show="isShow">v-show</h2>
+  <h2 v-if="isShow">v-if</h2>
+</template>
+<script src="../js/vue.global.js"></script>
+<script>
+  const App = {
+    template: '#my-app',
+    data() {
+      return {
+        message: 'Hello World',
+        isShow: false
+      }
+    }
+  }
+
+  Vue.createApp(App).mount('#app')
+</script>
+</body>
+</html>

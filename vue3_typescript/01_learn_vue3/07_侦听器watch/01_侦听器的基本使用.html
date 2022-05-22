@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+
+<template id="my-app">
+  <h2>{{question}}</h2>
+  <input type="text" name="" v-model="question" id="">
+  <button @click="queryAnswer">query answer</button>
+</template>
+<script src="../js/vue.global.js"></script>
+<script>
+  const App = {
+    template: '#my-app',
+    data() {
+      return {
+        question: 'Hello World',
+        answer: ''
+      }
+    },
+    methods: {
+      queryAnswer() {
+        console.log(`your question: ${this.question} : he he he`)
+      }
+    },
+    watch: {
+      question(newVal, oldVal) {
+        console.log(newVal, oldVal)
+      }
+    }
+  }
+
+  Vue.createApp(App).mount('#app')
+</script>
+</body>
+</html>

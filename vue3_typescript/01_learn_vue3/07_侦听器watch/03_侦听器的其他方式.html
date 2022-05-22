@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+
+<template id="my-app">
+  <h2>{{info.name}}</h2>
+  <button @click="changeInfo">change info</button>
+  <button @click="changeInfoName">change info name</button>
+  <button @click="changeInfoNbaName">change info nba name</button>
+  <button @click="changeFriendsZeroName">change friends zero name</button>
+</template>
+<script src="../js/vue.global.js"></script>
+<script>
+  const App = {
+    template: '#my-app',
+    data() {
+      return {
+        message: 'Hello World',
+        info: {
+          name: 'why',
+          age: 18,
+          nba: {
+            name: 'kobe'
+          }
+        },
+        friends: [{name: 'why'}, {name: 'kobe'}]
+      }
+    },
+    watch: {
+      // info(newInfo, oldInfo) {
+      //   console.log(newInfo, oldInfo)
+      // }
+      'info.name': function (newVal, oldVal) {
+        console.log(newVal, oldVal)
+      },
+      'friends[0].name': function (newVal, oldVal) {
+        console.log(newVal, oldVal)
+      }
+    },
+    methods: {
+      changeInfo() {
+        this.info = {
+          name: 'kobe'
+        }
+      },
+      changeInfoName() {
+        this.info.name = 'kobe'
+      },
+      changeInfoNbaName() {
+        this.info.nba.name = 'james'
+      },
+      changeFriendsZeroName() {
+        this.friends[0].name = 'james'
+      }
+    },
+    created() {
+      this.$watch("info", (newInfo, oldInfo) => {
+        console.log(newInfo, oldInfo)
+      })
+    }
+  }
+
+  Vue.createApp(App).mount('#app')
+</script>
+</body>
+</html>

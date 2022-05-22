@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+
+<template id="my-app">
+  <button @click="changeFirstName">change firstName</button>
+  <h2>{{fullName}}</h2>
+  <h2>{{getFullName()}}</h2>
+  <hr>
+  <h2>{{fullName}}</h2>
+  <h2>{{getFullName()}}</h2>
+  <hr>
+  <h2>{{fullName}}</h2>
+  <h2>{{getFullName()}}</h2>
+</template>
+<script src="../js/vue.global.js"></script>
+<script>
+  const App = {
+    template: '#my-app',
+    data() {
+      return {
+        message: 'Hello World',
+        firstName: 'Kobe',
+        lastName: 'Bryant',
+        score: 90
+      }
+    },
+    computed: {
+      // computed has cache
+      // fullName: function () {
+      //   return `${this.firstName} ${this.lastName}`
+      // },
+      fullName: {
+        get: function() {
+          return `${this.firstName} ${this.lastName}`
+        },
+        set: function(newVal) {
+          console.log(newVal)
+        }
+      }
+    },
+    methods: {
+      getFullName() {
+        return `${this.firstName} ${this.lastName}`
+      },
+      changeFirstName() {
+        this.firstName = 'Ahead'
+      }
+    }
+  }
+
+  Vue.createApp(App).mount('#app')
+</script>
+</body>
+</html>
