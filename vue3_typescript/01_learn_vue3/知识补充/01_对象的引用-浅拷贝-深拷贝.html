@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  // const info = {name: 'why', age: 18}
+  // const obj = info
+  // console.log(info, obj)
+
+  // const info = {name: 'why', age: 18, friend: {name: 'kobe', height: 1.88}}
+  // const obj = Object.assign({}, info)
+  // console.log(info, obj)
+  // info.name = 'kobe'
+  // info.friend.name = 'james'
+  // console.log(info, obj)
+
+  const info = {name: 'why', age: 18, friend: {name: 'kobe', height: 1.88}}
+  const obj = JSON.parse(JSON.stringify(info))
+  console.log(info, obj)
+  info.name = 'kobe'
+  info.friend.name = 'james'
+  console.log(info, obj)
+</script>
+</body>
+</html>

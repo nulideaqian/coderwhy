@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+
+<template id="my-app">
+<!--  <input type="text" name="" v-model.lazy="message" id="">-->
+<!--  <input type="text" name="" v-model.number="message" id="">-->
+<!--  <h2>{{message}}</h2>-->
+<!--  <button @click="queryType">query type</button>-->
+  <input type="text" name="" v-model.lazy="message" id="">
+  <button @click="showResult">show result</button>-->
+</template>
+<script src="../js/vue.global.js"></script>
+<script>
+  const App = {
+    template: '#my-app',
+    data() {
+      return {
+        message: 0
+      }
+    },
+    methods: {
+      queryType() {
+        console.log(typeof this.message)
+      },
+      showResult() {
+        console.log(this.message)
+      }
+    }
+  }
+
+  Vue.createApp(App).mount('#app')
+</script>
+</body>
+</html>
