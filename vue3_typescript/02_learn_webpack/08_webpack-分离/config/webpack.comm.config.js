@@ -1,18 +1,23 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const {DefinePlugin} = require('webpack')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 const {VueLoaderPlugin} = require('vue-loader/dist/index')
 
 module.exports = {
-  mode: 'development',
-  devtool: 'source-map',
+  target: 'web',
   entry: "./src/main.js",
   output: {
-    path: path.resolve(__dirname, './build'),
+    path: path.resolve(__dirname, '../build'),
     filename: "js/bundle.js",
-    publicPath: './',
+    publicPath: 'auto',
     clean: true
+  },
+  resolve: {
+    extensions: ['.js', '.json', '.mjs', '.vue', '.ts', '.jsx', '.tsx'],
+    alias: {
+      '@': path.resolve(__dirname, '../src'),
+      'js': path.resolve(__dirname, '../src/js')
+    }
   },
   module: {
     rules: [
@@ -70,19 +75,6 @@ module.exports = {
       BASE_URL: '"./"',
       __VUE_OPTIONS_API__: true,
       __VUE_PROD_DEVTOOLS__: false
-    }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: 'public',
-          to: '',
-          globOptions: {
-            ignore: [
-              "**/index.html"
-            ]
-          }
-        }
-      ]
     }),
     new VueLoaderPlugin()
   ]

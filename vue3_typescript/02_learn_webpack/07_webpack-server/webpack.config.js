@@ -6,13 +6,19 @@ const {VueLoaderPlugin} = require('vue-loader/dist/index')
 
 module.exports = {
   mode: 'development',
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   entry: "./src/main.js",
+  target: 'web',
   output: {
     path: path.resolve(__dirname, './build'),
     filename: "js/bundle.js",
-    publicPath: './',
+    publicPath: 'auto',
     clean: true
+  },
+  devServer: {
+    static: './abc',
+    port: 8080,
+    hot: true
   },
   module: {
     rules: [
