@@ -8,7 +8,13 @@
 <script>
 export default {
   name: "CounterOperation",
-  emits: ['add', 'sub'],
+  emits: {
+    add: null,
+    sub: null,
+    addN: payload => {
+      console.log(payload)
+    }
+  },
   methods: {
     increment() {
       console.log('+1')
