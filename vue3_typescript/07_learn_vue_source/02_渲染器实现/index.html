@@ -13,9 +13,14 @@
     h('h2', null, '当前计数器：100'),
     h('button', {onClick: function () {}}, '+1')
   ])
-  // 通过mount函数将vnode挂载到div#app上
+  // 2. 通过mount函数将vnode挂载到div#app上
   mount(vnode, document.querySelector('#app'))
   console.log(vnode)
+
+  // 3. 创建新的vnode
+  const vnode1 = h('h2', {class: 'coderwhy'}, '哈哈哈')
+
+  patch(vnode, vnode1)
 </script>
 </body>
 </html>
