@@ -3,8 +3,10 @@ class Dep {
     this.subscriber = new Set()
   }
 
-  addEffect(effect) {
-    this.subscriber.add(effect)
+  depend() {
+    if (activeEffect) {
+      this.subscriber.add(activeEffect)
+    }
   }
 
   notify() {
@@ -15,11 +17,14 @@ class Dep {
 }
 
 function watchEffect(effect) {
-  dep.addEffect(doubleCounter)
-  dep.addEffect(powCounter)
+  activeEffect = effect
+  dep.depend()
+  activeEffect = null
 }
 
 const dep = new Dep()
+
+let activeEffect = null
 
 const info = {counter: 100}
 
