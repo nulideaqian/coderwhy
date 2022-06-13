@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <a href="#/home">home</a>
+  <a href="#/about">about</a>
+  <div class="content">Default</div>
+</div>
+
+<script>
+  let contentEl = document.querySelector('.content')
+  window.addEventListener('hashchange', () => {
+    console.log('hashchange', location.hash)
+    console.log(contentEl)
+    switch (location.hash) {
+      case '#/home':
+        contentEl.innerHTML = 'Home'
+        break
+      case '#/about':
+        contentEl.innerHTML = 'About'
+        break;
+      default:
+        contentEl.innerHTML = 'Default'
+    }
+  })
+</script>
+</body>
+</html>

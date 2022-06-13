@@ -16,15 +16,6 @@ class Dep {
   }
 }
 
-function reactive(raw) {
-  return new Proxy(raw, {
-    get(target, key, receiver) {
-    },
-    set(target, key, value, receiver) {
-    }
-  });
-}
-
 function watchEffect(effect) {
   activeEffect = effect
   dep.depend()
@@ -35,8 +26,7 @@ const dep = new Dep()
 
 let activeEffect = null
 
-const info = reactive({counter: 100, name: '123'})
-info.name = '666'
+const info = {counter: 100}
 
 watchEffect(function () {
   console.log(info.counter * 2)
