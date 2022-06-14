@@ -1,19 +1,40 @@
-import Home from "@/pages/Home";
-import About from "@/pages/About";
 import {createRouter, createWebHistory, createWebHashHistory} from 'vue-router'
 
 const routes = [
   {
     path: '/',
-    component: Home
+    redirect: '/home'
   },
   {
     path: '/home',
-    component: Home
+    name: 'home-router',
+    component: () => import(/* webpackChunkName: "home-chunk" */'../pages/Home.vue'),
+    meta: {
+      name: 'why',
+      age: 28
+    },
+    children: [
+      {
+        path: 'message',
+        component: () => import('../pages/HomeMessage.vue')
+      },
+      {
+        path: 'shops',
+        component: () => import('../pages/HomeShops.vue')
+      }
+    ]
   },
   {
     path: '/about',
-    component: About
+    component: () => import('../pages/About.vue')
+  },
+  {
+    path: '/user/:username',
+    component: () => import('../pages/User.vue')
+  },
+  {
+    path: '/:pathMatch(.*)',
+    component: () => import('../pages/NotFound.vue')
   }
 ]
 
@@ -21,6 +42,7 @@ const routes = [
 const router = createRouter({
   routes,
   history: createWebHistory('')
+  // history: createWebHashHistory()
 })
 
 export default router
