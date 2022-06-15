@@ -45,4 +45,11 @@ const router = createRouter({
   // history: createWebHashHistory()
 })
 
+const categoryRoute = {
+  path: '/category',
+  component: () => import('../pages/Category.vue')
+}
+
+router.addRoute(categoryRoute)
+
 export default router

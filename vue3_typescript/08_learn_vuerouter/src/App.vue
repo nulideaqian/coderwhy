@@ -8,16 +8,35 @@
 <!--    <button>首页</button>-->
 <!--    <button>关于</button>-->
 
-    <router-link to="/home">首页</router-link> |
-    <router-link to="/about">关于</router-link> |
-    <router-link to="/user">用户</router-link>
-    <router-view/>
+    <!-- props: href 跳转的链接 -->
+    <router-link to="/home" v-slot="props">
+      <button>{{props.href}}</button>
+      <p>{{props.route}}</p>
+      <p>{{props.navigate}}</p>
+    </router-link> |
+    <router-link to="/about">
+      <strong>关于</strong>
+    </router-link> |
+    <router-link to="/user">
+      <nav-bar title="用户">用户</nav-bar>
+    </router-link>
+    <router-link to="/category">
+      <button>分类</button>
+    </router-link>
+    <router-view>
+
+    </router-view>
   </div>
 </template>
 <script>
-export default {
-  components: {
+import NavBar from "@/components/NavBar";
 
+export default {
+  components: {NavBar},
+  setup() {
+    return {
+      NavBar
+    }
   }
 }
 </script>
