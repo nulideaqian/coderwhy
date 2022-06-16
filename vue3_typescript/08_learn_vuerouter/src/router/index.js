@@ -35,6 +35,10 @@ const routes = [
   {
     path: '/:pathMatch(.*)',
     component: () => import('../pages/NotFound.vue')
+  },
+  {
+    path: '/login',
+    component: () => import('../pages/Login.vue')
   }
 ]
 
@@ -51,5 +55,16 @@ const categoryRoute = {
 }
 
 router.addRoute(categoryRoute)
+
+let counter = 0
+// 返回值： false不进行导航；undefined或者不写：进行默认导航，该去哪去哪；字符串：路径，则跳转
+router.beforeEach((to, from) => {
+  if (to.path !== '/login') {
+    const token = window.localStorage.getItem('token')
+    if (!token) {
+      return '/login'
+    }
+  }
+})
 
 export default router
