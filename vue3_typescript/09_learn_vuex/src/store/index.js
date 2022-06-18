@@ -1,22 +1,20 @@
 import { createStore } from 'vuex'
+import home from "@/store/modules/home";
+import user from "@/store/modules/user";
 
 export default createStore({
-  state: {
-    counter: 100
-  },
-  getters: {
+  state() {
+    return {
+      rootCounter: 0
+    }
   },
   mutations: {
     increment(state) {
-      console.log('get mutation from mutation')
-      state.counter++
-    },
-    decrement(state) {
-      state.counter--
+      state.rootCounter++
     }
   },
-  actions: {
-  },
   modules: {
+    home,
+    user
   }
 })

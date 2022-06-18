@@ -1,4 +1,6 @@
 <template>
+  <home/>
+
   <h2>{{ $store.state.counter }}</h2>
   <button @click="increment">+1</button>
   <button @click="decrement">-1</button>
@@ -6,10 +8,10 @@
 
 <script>
 import {useStore} from 'vuex'
+import Home from "@/pages/Home";
 
 export default {
   name: 'App',
-  components: {},
   setup() {
     const store = useStore()
     const increment = () => {
@@ -21,8 +23,11 @@ export default {
 
     return {
       increment,
-      decrement,
+      decrement
     }
+  },
+  components: {
+    Home
   }
 }
 </script>
