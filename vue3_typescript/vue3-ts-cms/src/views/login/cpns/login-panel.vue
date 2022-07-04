@@ -9,7 +9,7 @@
             <span>账号登录</span>
           </span>
         </template>
-        <login-account />
+        <login-account ref="accountRef" />
       </el-tab-pane>
       <el-tab-pane>
         <template #label>
@@ -18,15 +18,32 @@
             <span>手机登录</span>
           </span>
         </template>
-        Route
+        <login-phone />
       </el-tab-pane>
     </el-tabs>
+    <div class="account-control">
+      <el-checkbox v-model="isKeepPassword">记住密码</el-checkbox>
+      <el-link type="primary">忘记密码</el-link>
+    </div>
+
+    <el-button type="primary" class="login-btn" @click="handleLoginClick"
+      >立即登录</el-button
+    >
   </div>
 </template>
 
 <script lang="ts" setup>
 import { Iphone, UserFilled } from '@element-plus/icons-vue'
-import LoginAccount from './login-account'
+import LoginAccount from './login-account.vue'
+import LoginPhone from './login-phone.vue'
+import { ref } from 'vue'
+
+const isKeepPassword = ref(false)
+const accountRef = ref<InstanceType<typeof LoginAccount> | null>(null)
+
+const handleLoginClick = () => {
+  accountRef.value?.loginAction()
+}
 </script>
 
 <style scoped lang="less">
@@ -35,6 +52,16 @@ import LoginAccount from './login-account'
 
   .title {
     text-align: center;
+  }
+
+  .account-control {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .login-btn {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 </style>
