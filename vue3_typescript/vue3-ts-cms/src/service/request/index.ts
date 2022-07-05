@@ -28,7 +28,6 @@ class HYRequest {
     // 添加所有实例都有的拦截器
     this.instance.interceptors.request.use(
       (config) => {
-        console.log('所有的实例都有的拦截器：请求拦截成功')
         if (this.showLoading) {
           this.loading = ElLoading.service({
             lock: true,
